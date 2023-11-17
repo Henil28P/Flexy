@@ -15,6 +15,11 @@ struct ContentView: View {
                 .foregroundStyle(.tint)
             Text("Flexy!")
         }
+        
+        
+        Button(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/) {
+            
+        }
         .padding()
     }
 }
