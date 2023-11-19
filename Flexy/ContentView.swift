@@ -9,18 +9,30 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "house")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Flexy!")
+        TabView {
+            ViewA()
+                .tabItem() {
+                    Image(systemName: "figure.strengthtraining.functional")
+                    Text("Stretch")
+                }
+            ViewB()
+                .tabItem() {
+                    Image(systemName: "star.fill")
+                    Text("Saved Stretches")
+                }
         }
-        
-        
-        Button(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/) {
-            
-        }
-        .padding()
+//        VStack {
+//            Image(systemName: "house")
+//                .imageScale(.large)
+//                .foregroundStyle(.tint)
+//            Text("Flexy!")
+//        }
+//        
+//        
+//        Button(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/) {
+//            
+//        }
+//        .padding()
     }
 }
 
