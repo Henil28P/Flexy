@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52AB52B02B0AE25B00F11FA1 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52AB52AF2B0AE25B00F11FA1 /* Media.xcassets */; };
+		52AB52B42B0AE32300F11FA1 /* Home screen image.png in Resources */ = {isa = PBXBuildFile; fileRef = 52AB52B32B0AE32300F11FA1 /* Home screen image.png */; };
+		52AB52BB2B0AE6F500F11FA1 /* Screenshot 2023-11-20 at 11.57.22 am.png in Resources */ = {isa = PBXBuildFile; fileRef = 52AB52BA2B0AE6F500F11FA1 /* Screenshot 2023-11-20 at 11.57.22 am.png */; };
+		52AB52BD2B0AE72500F11FA1 /* Screenshot 2023-11-20 at 11.56.08 am.png in Resources */ = {isa = PBXBuildFile; fileRef = 52AB52BC2B0AE72500F11FA1 /* Screenshot 2023-11-20 at 11.56.08 am.png */; };
 		E435FAE92B07513F009D3E7A /* ViewA.swift in Sources */ = {isa = PBXBuildFile; fileRef = E435FAE82B07513F009D3E7A /* ViewA.swift */; };
 		E435FAEC2B07515B009D3E7A /* ViewB.swift in Sources */ = {isa = PBXBuildFile; fileRef = E435FAEB2B07515B009D3E7A /* ViewB.swift */; };
 		E435FAEE2B075163009D3E7A /* ViewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E435FAED2B075163009D3E7A /* ViewC.swift */; };
@@ -39,6 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		52AB52AF2B0AE25B00F11FA1 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		52AB52B32B0AE32300F11FA1 /* Home screen image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Home screen image.png"; path = "../../Desktop/Home screen image.png"; sourceTree = "<group>"; };
+		52AB52B52B0AE32900F11FA1 /* Home screen image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home screen image.png"; sourceTree = "<group>"; };
+		52AB52BA2B0AE6F500F11FA1 /* Screenshot 2023-11-20 at 11.57.22 am.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screenshot 2023-11-20 at 11.57.22 am.png"; path = "../../../Desktop/Screenshot 2023-11-20 at 11.57.22 am.png"; sourceTree = "<group>"; };
+		52AB52BC2B0AE72500F11FA1 /* Screenshot 2023-11-20 at 11.56.08 am.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screenshot 2023-11-20 at 11.56.08 am.png"; path = "../../../Desktop/Screenshot 2023-11-20 at 11.56.08 am.png"; sourceTree = "<group>"; };
 		E435FAE82B07513F009D3E7A /* ViewA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewA.swift; sourceTree = "<group>"; };
 		E435FAEB2B07515B009D3E7A /* ViewB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewB.swift; sourceTree = "<group>"; };
 		E435FAED2B075163009D3E7A /* ViewC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewC.swift; sourceTree = "<group>"; };
@@ -104,6 +113,7 @@
 		E4D09B0A2B04714A00A5F4EA = {
 			isa = PBXGroup;
 			children = (
+				52AB52B32B0AE32300F11FA1 /* Home screen image.png */,
 				E4D09B152B04714A00A5F4EA /* Flexy */,
 				E4D09B262B04714C00A5F4EA /* FlexyTests */,
 				E4D09B302B04714C00A5F4EA /* FlexyUITests */,
@@ -129,7 +139,11 @@
 				E4D09B162B04714A00A5F4EA /* FlexyApp.swift */,
 				E4D09B182B04714A00A5F4EA /* ContentView.swift */,
 				E4D09B1A2B04714C00A5F4EA /* Assets.xcassets */,
+				52AB52BC2B0AE72500F11FA1 /* Screenshot 2023-11-20 at 11.56.08 am.png */,
+				52AB52AF2B0AE25B00F11FA1 /* Media.xcassets */,
 				E435FAF12B07B6B4009D3E7A /* monkey.png */,
+				52AB52B52B0AE32900F11FA1 /* Home screen image.png */,
+				52AB52BA2B0AE6F500F11FA1 /* Screenshot 2023-11-20 at 11.57.22 am.png */,
 				E4D09B1C2B04714C00A5F4EA /* Preview Content */,
 			);
 			path = Flexy;
@@ -264,7 +278,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52AB52B42B0AE32300F11FA1 /* Home screen image.png in Resources */,
 				E4D09B1E2B04714C00A5F4EA /* Preview Assets.xcassets in Resources */,
+				52AB52B02B0AE25B00F11FA1 /* Media.xcassets in Resources */,
+				52AB52BD2B0AE72500F11FA1 /* Screenshot 2023-11-20 at 11.56.08 am.png in Resources */,
+				52AB52BB2B0AE6F500F11FA1 /* Screenshot 2023-11-20 at 11.57.22 am.png in Resources */,
 				E4D09B1B2B04714C00A5F4EA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
