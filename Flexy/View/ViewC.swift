@@ -16,7 +16,7 @@ struct ViewC: View {
                     .ignoresSafeArea()
 
                 VStack {
-                Text("please select a body part to get started")
+                Text("")
                     
                 Image("HomeScreenMonkey")
                     .resizable()
@@ -54,66 +54,62 @@ struct ViewC: View {
                     HStack{
                         Spacer().frame(width: 160)
                         NavigationLink (destination: ViewB()) {
-                            Text("")
+                            Text("Arms")
                             // .padding()
-                                .frame(width:150, height: 70)
-                                .background(Color.brown)
+                                .frame(width:100, height: 60)
+                                .background(Color.green)
                                 .foregroundColor(.white)
                                 .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                                .opacity(/*@START_MENU_TOKEN@*/0.8/*@END_MENU_TOKEN@*/)
                         }}
                     
                     HStack{
+                        Spacer().frame(height: 5)
                         NavigationLink (destination: ViewB()) {
                             Text("")
                             // .padding()
-                                .frame(width:150, height: 70)
-                                .background(Color.brown)
+                                .frame(width:100, height: 60)
+                                .background(Color.green)
                                 .foregroundColor(.white)
                                 .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                                .opacity(/*@START_MENU_TOKEN@*/0.8/*@END_MENU_TOKEN@*/)
                         }}
                     
-                    NavigationLink (destination: ViewB()) {
+                    HStack{
+                        Spacer().frame(width:50)
+                        NavigationLink (destination: ViewB()) {
                             Text("")
-                               // .padding()
-                                .frame(width:150, height: 70)
-                                .background(Color.brown)
+                            // .padding()
+                                .frame(width:100, height: 60)
+                                .background(Color.green)
                                 .foregroundColor(.white)
-                                .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-                                 }
+                                .clipShape(Circle())
+                                .opacity(/*@START_MENU_TOKEN@*/0.8/*@END_MENU_TOKEN@*/)
+                        }}
+                    
                     
                     HStack {
                         Spacer().frame(width: 80)
                         NavigationLink (destination: ViewB()) {
-                                Text("")
+                                Text("Legs")
+                                .bold()
                                    // .padding()
-                                    .frame(width:150, height: 70)
-                                    .background(Color.brown)
+                                    .frame(width:100, height: 60)
+                                    .background(Color.green)
                                     .foregroundColor(.white)
                                     .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                                    .opacity(/*@START_MENU_TOKEN@*/0.8/*@END_MENU_TOKEN@*/)
                         }
                     }
-                    
-                   
+            
                     
                 }
-                
-                
-                
-                
-                
                 }
-            
-            
-            
-            
-            
-           
-                
+
             }
         }
         
     }
-
 
 
 
