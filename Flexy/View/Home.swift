@@ -7,99 +7,158 @@
 
 import SwiftUI
 
-struct ViewC: View {
+struct Home: View {
+    @State private var isBubbleTapped = false
+    
     var body: some View {
-        @State var addSpacer = 5
         NavigationView {
             ZStack {
                 Color.init(red: 232 / 255, green: 244 / 255, blue: 220 / 255)
                     .ignoresSafeArea()
-
+                
                 VStack {
-               
-                Text ("Please click on any specific body part")
+                    Text("Let's Stretch")
+                        .font(.title2)
                     
-                Image("HomeScreenMonkey")
-                    .resizable()
-                    .scaledToFit()
-                    .cornerRadius(15)
-        
-//                    Text("Let's Stretch")
-//                        .font(.title)
-   
-                    Spacer()
-                    NavigationLink (destination: ExerciseListView()) {
-                            Text("Explore all exercises")
-                            .foregroundColor(.white)
-                            .padding()
-                            .background(Color.green)
-                            .cornerRadius(20)
-                                 }
-//                    Button(action: {
-//                        // Action to be performed when the button is tapped
-//                        // You can navigate to another view or perform some other action here
-//                        print("Button tapped!")
-//                    }) {
-//                        Text("Explore all exercises")
-//                            .foregroundColor(.white)
-//                            .padding()
-//                            .background(Color.green)
-//                            .cornerRadius(20)
-//                    }
-                }
-               
-          //  .navigationBarTitle("Let's Stretch")
-                
-                
-                VStack{
-                    HStack{
-                        Spacer().frame(width: 160)
-                        NavigationLink (destination: ExerciseListView()) {
-                            Text("Arms")
-                            // .padding()
-                                .frame(width:100, height: 60)
-                                .background(Color.green)
+                    Text("Please click on any specific body parts")
+                        .foregroundColor(.black)
+                    
+                    Image("HomeScreenMonkey")
+                        .scaledToFit()
+                        .cornerRadius(15)
+                    
+                    HStack {
+                        NavigationLink(destination: ExerciseListView()) {
+                            Text("Explore All Related Exercises")
                                 .foregroundColor(.white)
-                                .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-                                .opacity(/*@START_MENU_TOKEN@*/0.8/*@END_MENU_TOKEN@*/)
-                        }}
+                                .padding()
+                                .frame(maxWidth: .infinity)
+                                .background(Color.green)
+                                .cornerRadius(20)
+                        }
+                    }
+                    .padding(16) // Adjust the padding value according to your preference
+                }
+                
+                ZStack {
+                    VStack {
+                        
+                        Text("Groin")
+                            .font(.subheadline)
+                            .bold()
+                            .frame(width: 50, height: 50)
+                            .background(Color.green)
+                            .foregroundColor(.white)
+                            .clipShape(Circle())
+                            .overlay(
+                                Circle()
+                                    .stroke(Color.white, lineWidth: 3)
+                            )
+                            .opacity(0.9)
+                            .position(x: 160, y: 510)
+                        
+                    }
                     
-                    HStack{
-                        Spacer().frame(width:50)
-                        NavigationLink (destination: ExerciseListView()) {
-                            Text("Abs")
-                            // .padding()
-                                .frame(width:100, height: 60)
+                    VStack {
+                        
+                        Text("Arms")
+                            .font(.subheadline)
+                            .bold()
+                            .frame(width: 50, height: 50)
+                            .background(Color.green)
+                            .foregroundColor(.white)
+                            .clipShape(Circle())
+                            .overlay(
+                                Circle()
+                                    .stroke(Color.white, lineWidth: 3)
+                            )
+                            .opacity(0.9)
+                            .position(x: 280, y: 280)
+                        
+                    }
+                    
+                    VStack {
+                        
+                        Text("Abs")
+                            .font(.subheadline)
+                            .bold()
+                            .frame(width: 50, height: 50)
+                            .background(Color.green)
+                            .foregroundColor(.white)
+                            .clipShape(Circle())
+                            .overlay(
+                                Circle()
+                                    .stroke(Color.white, lineWidth: 3)
+                            )
+                            .opacity(0.9)
+                            .position(x: 190, y: 420)
+                        
+                    }
+                
+                        
+                        VStack {
+                            
+                            Text("Neck")
+                                .font(.subheadline)
+                                .bold()
+                                .frame(width: 50, height: 50)
                                 .background(Color.green)
                                 .foregroundColor(.white)
                                 .clipShape(Circle())
-                                .opacity(/*@START_MENU_TOKEN@*/0.8/*@END_MENU_TOKEN@*/)
-                        }}
-                    
-                    
-                    HStack {
-                        Spacer().frame(width: 80)
-                        NavigationLink (destination: ExerciseListView()) {
-                                Text("Legs")
+                                .overlay(
+                                    Circle()
+                                        .stroke(Color.white, lineWidth: 3)
+                                )
+                                .opacity(0.9)
+                                .position(x: 130, y: 300)
+                            
+                        }
+                        
+                        
+                            VStack {
+                                Button(action: {
+                                    // Toggle the state when the button is tapped
+                                    isBubbleTapped.toggle()
+                                }) {
+                                    Text("Legs")
+                                        .font(.subheadline)
+                                        .bold()
+                                        .frame(width: 50, height: 50)
+                                        .background(isBubbleTapped ? Color.orange : Color.green)
+                                        .foregroundColor(.white)
+                                        .clipShape(Circle())
+                                        .overlay(
+                                            Circle()
+                                                .stroke(Color.white, lineWidth: 3)
+                                        )
+                                        .opacity(isBubbleTapped ? 1.0 : 0.9)
+                                        .position(x: 220, y: 550)
+                                }
+                            }
+                            
+                        }
+                        
+                        VStack {
+                            
+                            Text("Wrist")
+                                .font(.subheadline)
                                 .bold()
-                                   // .padding()
-                                    .frame(width:100, height: 60)
-                                    .background(Color.green)
-                                    .foregroundColor(.white)
-                                    .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-                                    .opacity(/*@START_MENU_TOKEN@*/0.8/*@END_MENU_TOKEN@*/)
+                                .frame(width: 50, height: 50)
+                                .background(Color.green)
+                                .foregroundColor(.white)
+                                .clipShape(Circle())
+                                .overlay(
+                                    Circle()
+                                        .stroke(Color.white, lineWidth: 3)
+                                )
+                                .opacity(0.9)
+                                .position(x: 100, y: 455)
                         }
                     }
-            
-                }
                 }
             }
         }
-        
-    }
-
-
 
 #Preview {
-    ViewC()
+    Home()
 }

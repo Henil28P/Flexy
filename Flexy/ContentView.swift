@@ -10,19 +10,19 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            ViewC()
+            Home()
                 .tabItem() {
                     Image(systemName: "figure.strengthtraining.functional")
                     Text("Stretch")
                 }
-            ViewB()
+            Feedback()
                 .tabItem() {
                     Image(systemName: "star.fill")
                     Text("Saved Stretches")
                 }
-            ViewC()
+            Home()
                 .tabItem() {
-                    Image(systemName: "star.fill")
+                    Image(systemName: "gearshape")
                     Text("Settings")
                 }
         }

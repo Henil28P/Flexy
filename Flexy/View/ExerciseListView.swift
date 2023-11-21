@@ -64,7 +64,7 @@ struct ExerciseListView: View {
                 
                 
                  //first card
-                NavigationLink(destination: ViewA()) {
+                NavigationLink(destination: Instruction()) {
                     VStack(alignment: .leading, spacing: 0) {
                         Image("Exercise-thumbnail")
                         

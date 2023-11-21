@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ViewB: View {
+struct Feedback: View {
     var body: some View {
         
 //        ZStack {
@@ -81,5 +81,5 @@ struct ViewB: View {
 }
 
 #Preview {
-    ViewB()
+    Feedback()
 }

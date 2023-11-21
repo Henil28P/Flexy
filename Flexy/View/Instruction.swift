@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ViewA: View {
+struct Instruction: View {
     var body: some View {
 //        ZStack {
 //            HStack {
@@ -47,7 +47,7 @@ struct ViewA: View {
                 }
                 .padding()
                 
-                NavigationLink(destination: ViewB()) {
+                NavigationLink(destination: Feedback()) {
                     
                     Text("Let's Start")
                         .foregroundColor(Color.white)
@@ -73,5 +73,5 @@ struct ViewA: View {
 }
 
 #Preview {
-    ViewA()
+    Instruction()
 }
