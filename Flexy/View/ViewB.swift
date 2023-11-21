@@ -11,19 +11,19 @@ import SwiftUI
 struct ViewB: View {
     var body: some View {
         
-        ZStack {
-            HStack {
-                Text("")
-                Image(systemName: "chevron.backward")
-                    .foregroundColor(.blue)
-                Button("Back") {
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-                }
-                Spacer()
-            }
-            Text("Speedy Leg Extension")
-                .fontWeight(/*@START_MENU_TOKEN@*/.semibold/*@END_MENU_TOKEN@*/)
-        }
+//        ZStack {
+//            HStack {
+//                Text("")
+//                Image(systemName: "chevron.backward")
+//                    .foregroundColor(.blue)
+//                Button("Back") {
+//                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+//                }
+//                Spacer()
+//            }
+//            Text("Speedy Leg Extension")
+//                .fontWeight(/*@START_MENU_TOKEN@*/.semibold/*@END_MENU_TOKEN@*/)
+//        }
         
         ZStack {
             

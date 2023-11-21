@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            ViewA()
+            ViewC()
                 .tabItem() {
                     Image(systemName: "figure.strengthtraining.functional")
                     Text("Stretch")
@@ -19,6 +19,11 @@ struct ContentView: View {
                 .tabItem() {
                     Image(systemName: "star.fill")
                     Text("Saved Stretches")
+                }
+            ViewC()
+                .tabItem() {
+                    Image(systemName: "star.fill")
+                    Text("Settings")
                 }
         }
 //        VStack {

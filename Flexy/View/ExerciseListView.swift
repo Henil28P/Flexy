@@ -18,58 +18,6 @@ extension UIColor {
     }
 }
 
-
-//struct ExerciseListView: View {
-//    var body: some View {
-//        ZStack {
-//            Color.init(hue: 0.248, saturation: 0.150, brightness: 0.901).edgesIgnoringSafeArea(.all)
-//            VStack {
-//                
-//                // first card
-//                VStack {
-//                    Image("Exercise-thumbnail")
-//                    
-//                    
-//                    HStack {
-//                        VStack (alignment: .leading) {
-//                            Text("Speedy Leg Extension")
-//                                .font(.headline)
-//                            HStack {
-//                                Text("Standing")
-//                                Text("|")
-//                                Text("Low Impact")
-//                            }
-//                            .foregroundColor(.gray)
-//                        }
-//                        .padding(10.0)
-//                        .cornerRadius(8)
-//                        
-//                        
-//                        Spacer()
-//                        
-//                        HStack {
-//                            Image(systemName: "gauge.with.needle")
-//                            Text ("3 Mins")
-//                        }
-//                        .padding(8)
-//                        .background(Color(UIColor(rgb: 0x69BF14))
-//                        .cornerRadius(20))
-//                    }
-//                    .padding(.trailing)
-//                    .background(Color.white)
-//                }
-//                .background(Color.white)
-//                .cornerRadius(8)
-//                .padding(.vertical, 4)
-//                .padding(.horizontal, 16)
-//                
-//            }
-//        }
-//    }
-//}
-
-import SwiftUI
-
 struct ExerciseListView: View {
     var body: some View {
         ZStack {
@@ -79,53 +27,13 @@ struct ExerciseListView: View {
                 Spacer()
                 Spacer()
                 Spacer()
-                Spacer()
-                VStack{
-                    NavigationLink(destination: ViewC()) {
-                        HStack(spacing: 52) {
-                          HStack(spacing: 3)
-                            {Image(systemName: "chevron.backward")
-                              .lineSpacing(22)
-                              .foregroundColor(Color(red: 0, green: 0.48, blue: 1))
-                                
-                            Text("Home")
-                              .lineSpacing(22)
-                              .foregroundColor(Color(red: 0, green: 0.48, blue: 1))
-                          }
-                            
-                          .padding(EdgeInsets(top: 11, leading: 8, bottom: 11, trailing: 8))
-                          
-                            Text("Stretch Library")
-                            .lineSpacing(22)
-                            .foregroundColor(.black)
-                        }
-                        .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 133))
-                    }
-                    
-//                  HStack(spacing: 52) {
-//                    HStack(spacing: 3)
-//                      {Image(systemName: "chevron.backward")
-//                        .lineSpacing(22)
-//                        .foregroundColor(Color(red: 0, green: 0.48, blue: 1))
-//                          
-//                      Text("Home")
-//                        .lineSpacing(22)
-//                        .foregroundColor(Color(red: 0, green: 0.48, blue: 1))
-//                    }
-//                      
-//                    .padding(EdgeInsets(top: 11, leading: 8, bottom: 11, trailing: 8))
-//                    
-//                      Text("Stretch Library")
-//                      .lineSpacing(22)
-//                      .foregroundColor(.black)
-//                  }
-//                  .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 133))
-                    
+                Text("HI")
+                    .font(.title)
                   VStack(alignment: .leading, spacing: 0) {
                     HStack(spacing: 0) {
                         Image(systemName: "magnifyingglass")
                         .foregroundColor(.gray)
-
+                    
                     Text("Search")
                         .foregroundColor(.gray)
                     
@@ -134,54 +42,65 @@ struct ExerciseListView: View {
                     Image(systemName: "mic.fill")
                         .foregroundColor(.gray)
                     }
+                      
+//                      HStack(spacing: 0) {
+//                          Image(systemName: "magnifyingglass")
+//                              .foregroundColor(.gray)
+//                          TextField(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=Label@*/"Password"/*@END_MENU_TOKEN@*/, text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("Apple")/*@END_MENU_TOKEN@*/)
+//                              .foregroundColor(.gray)
+//                          Spacer()
+//                          Image(systemName: "mic.fill") .foregroundColor(.gray)
+//                      }
+                      
                     .padding(EdgeInsets(top: 7, leading: 8, bottom: 7, trailing: 8))
                     .frame(maxWidth: .infinity)
                     .background(Color(red: 0.46, green: 0.46, blue: 0.50).opacity(0.12))
                     .cornerRadius(10)
                   }
                   .padding(EdgeInsets(top: 1, leading: 16, bottom: 15, trailing: 16))
-                }
+                
                 .background()
                 
                 
                  //first card
-                VStack(alignment: .leading, spacing: 0) {
-                    Image("Exercise-thumbnail")
-                    
-                    
-                    HStack {
-                        VStack (alignment: .leading) {
-                            Text("Speedy Leg Extension")
-                                .font(.headline)
-                            HStack {
-                                Text("Standing")
-                                Text("|")
-                                Text("Low Impact")
-                            }
-                            .foregroundColor(.gray)
-                        }
-                        .padding(10.0)
-                        .cornerRadius(8)
+                NavigationLink(destination: ViewA()) {
+                    VStack(alignment: .leading, spacing: 0) {
+                        Image("Exercise-thumbnail")
                         
-                        
-                        Spacer()
                         
                         HStack {
-                            Image(systemName: "gauge.with.needle")
-                            Text ("3 Mins")
+                            VStack (alignment: .leading) {
+                                Text("Speedy Leg Extension")
+                                    .font(.headline)
+                                HStack {
+                                    Text("Standing")
+                                    Text("|")
+                                    Text("Low Impact")
+                                }
+                                .foregroundColor(.gray)
+                            }
+                            .padding(10.0)
+                            .cornerRadius(8)
+                            
+                            
+                            Spacer()
+                            
+                            HStack {
+                                Image(systemName: "gauge.with.needle")
+                                Text ("3 Mins")
+                            }
+                            .padding(8)
+                            .background(Color(UIColor(rgb: 0x69BF14))
+                                .cornerRadius(20))
                         }
-                        .padding(8)
-                        .background(Color(UIColor(rgb: 0x69BF14))
-                        .cornerRadius(20))
+                        .padding(.trailing)
+                        .background(Color.white)
                     }
-                    .padding(.trailing)
                     .background(Color.white)
-                }
-                .background(Color.white)
-                .cornerRadius(8)
-                .padding(.vertical, 4)
-                .padding(.horizontal, 16)
-                
+                    .cornerRadius(8)
+                    .padding(.vertical, 4)
+                    .padding(.horizontal, 16)
+                }//.navigationBarTitle("Stretch Library")
                 
                 
                 VStack(alignment: .leading, spacing: 0) {
@@ -190,7 +109,7 @@ struct ExerciseListView: View {
                     
                     HStack {
                         VStack (alignment: .leading) {
-                            Text("Speedy Leg Extension")
+                            Text("Squats")
                                 .font(.headline)
                             HStack {
                                 Text("Standing")
@@ -264,7 +183,6 @@ struct ExerciseListView: View {
         }
     }
 }
-
 
 #Preview {
     ExerciseListView()
