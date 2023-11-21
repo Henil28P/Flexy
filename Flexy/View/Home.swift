@@ -3,6 +3,7 @@
 //  Flexy
 //
 //  Created by Henil Patel on 17/11/2023.
+// Tributaries, Mrunal, Tubusko, 
 //
 
 import SwiftUI
@@ -13,8 +14,7 @@ struct Home: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Color.init(red: 232 / 255, green: 244 / 255, blue: 220 / 255)
-                    .ignoresSafeArea()
+                // Color.init(red: 232 / 255, green: 244 / 255, blue: 220 / 255);
                 
                 VStack {
                     Text("Let's Stretch")
@@ -40,9 +40,8 @@ struct Home: View {
                     .padding(16) // Adjust the padding value according to your preference
                 }
                 
-                ZStack {
-                    VStack {
-                        
+              //  ZStack {
+                    
                         Text("Groin")
                             .font(.subheadline)
                             .bold()
@@ -56,11 +55,7 @@ struct Home: View {
                             )
                             .opacity(0.9)
                             .position(x: 160, y: 510)
-                        
-                    }
                     
-                    VStack {
-                        
                         Text("Arms")
                             .font(.subheadline)
                             .bold()
@@ -74,11 +69,7 @@ struct Home: View {
                             )
                             .opacity(0.9)
                             .position(x: 280, y: 280)
-                        
-                    }
-                    
-                    VStack {
-                        
+                         
                         Text("Abs")
                             .font(.subheadline)
                             .bold()
@@ -92,11 +83,6 @@ struct Home: View {
                             )
                             .opacity(0.9)
                             .position(x: 190, y: 420)
-                        
-                    }
-                
-                        
-                        VStack {
                             
                             Text("Neck")
                                 .font(.subheadline)
@@ -112,52 +98,51 @@ struct Home: View {
                                 .opacity(0.9)
                                 .position(x: 130, y: 300)
                             
-                        }
                         
-                        
-                            VStack {
-                                Button(action: {
-                                    // Toggle the state when the button is tapped
-                                    isBubbleTapped.toggle()
-                                }) {
-                                    Text("Legs")
-                                        .font(.subheadline)
-                                        .bold()
-                                        .frame(width: 50, height: 50)
-                                        .background(isBubbleTapped ? Color.orange : Color.green)
-                                        .foregroundColor(.white)
-                                        .clipShape(Circle())
-                                        .overlay(
-                                            Circle()
-                                                .stroke(Color.white, lineWidth: 3)
-                                        )
-                                        .opacity(isBubbleTapped ? 1.0 : 0.9)
-                                        .position(x: 220, y: 550)
-                                }
-                            }
-                            
+                          
+//                                Button(action: {
+//                                    // Toggle the state when the button is tapped
+//                                    isBubbleTapped.toggle()
+//                                }) {
+//                                    Text("Legs")
+//                                        .font(.subheadline)
+//                                        .bold()
+//                                        .frame(width: 50, height: 50)
+//                                        .background(isBubbleTapped ? Color.orange : Color.green)
+//                                        .foregroundColor(.white)
+//                                        .clipShape(Circle())
+//                                        .overlay(
+//                                            Circle()
+//                                                .stroke(Color.white, lineWidth: 3)
+//                                        )
+//                                        .opacity(isBubbleTapped ? 1.0 : 0.9)
+//                                        .position(x: 220, y: 550)
+//                                }
+//                            
+//                            
+//                        //}
+//                        
+//                       
+//                            
+//                            Text("Wrist")
+//                                .font(.subheadline)
+//                                .bold()
+//                                .frame(width: 50, height: 50)
+//                                .background(Color.green)
+//                                .foregroundColor(.white)
+//                                .clipShape(Circle())
+//                                .overlay(
+//                                    Circle()
+//                                        .stroke(Color.white, lineWidth: 3)
+//                                )
+//                                .opacity(0.9)
+//                                .position(x: 100, y: 455)
                         }
-                        
-                        VStack {
-                            
-                            Text("Wrist")
-                                .font(.subheadline)
-                                .bold()
-                                .frame(width: 50, height: 50)
-                                .background(Color.green)
-                                .foregroundColor(.white)
-                                .clipShape(Circle())
-                                .overlay(
-                                    Circle()
-                                        .stroke(Color.white, lineWidth: 3)
-                                )
-                                .opacity(0.9)
-                                .position(x: 100, y: 455)
-                        }
-                    }
+                    
                 }
             }
         }
+
 
 #Preview {
     Home()
