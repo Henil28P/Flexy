@@ -15,15 +15,15 @@ struct ContentView: View {
                     Image(systemName: "figure.strengthtraining.functional")
                     Text("Stretch")
                 }
-            Feedback()
+            SavedStretches()
                 .tabItem() {
                     Image(systemName: "star.fill")
                     Text("Saved Stretches")
                 }
-            Home()
+            Feedback()
                 .tabItem() {
                     Image(systemName: "gearshape")
-                    Text("Settings")
+                    Text("Summary")
                 }
         }
 //        VStack {
