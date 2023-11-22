@@ -7,8 +7,15 @@
 // first commit estelle
 
 import SwiftUI
+import AVKit
 
 struct Feedback: View {
+    @State private var player = AVPlayer()
+    let videoName: String = "Final1"
+    let videoType: String = "mov"
+    
+    //let url = URL(string: "Final1.mov")
+    
     var body: some View {
         
 //        ZStack {
@@ -25,11 +32,31 @@ struct Feedback: View {
 //                .fontWeight(/*@START_MENU_TOKEN@*/.semibold/*@END_MENU_TOKEN@*/)
 //        }
         
+//        VStack {
+//            VideoPlayer(player: AVPlayer(url: url!))
+//        }
+        
+        
+        
+        
         ZStack {
+            
+            // VideoPlayer(player: AVPlayer(url: url!))
             
             Color.init(hue: 0.0, saturation: 0.0, brightness: 1)
             
             VStack {
+                VideoPlayer(player: player)
+                    .onAppear() {
+                        guard let url = Bundle.main.url(forResource: videoName, withExtension: videoType)
+                        else {
+                            fatalError("Video file \(videoName).\(videoType) not found in the app bundle")
+                        }
+                        player = AVPlayer(url: url)
+                        player.play()
+                    }
+                //VideoPlayer(player: AVPlayer(url: url!))
+                
                 HStack {
                     Button("Audio") {
                         // Image(systemName: "voiceover")
