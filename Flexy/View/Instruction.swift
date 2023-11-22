@@ -5,11 +5,22 @@
 //  Created by Henil Patel on 17/11/2023.
 //
 
+import AVKit
 import SwiftUI
+import UIKit
 
 struct Instruction: View {
+    
+    let url = URL(string: "Final 1.mov")!
+    
     var body: some View {
-//        ZStack {
+        NavigationView {
+            VStack {
+                VideoPlayer(player: AVPlayer(url: url))
+            }
+        }
+        
+        //        ZStack {
 //            HStack {
 //                Text("")
 //                Image(systemName: "chevron.backward")
