@@ -27,7 +27,7 @@ struct Feedback: View {
         
         ZStack {
             
-            Color.init(hue: 0.247, saturation: 0.150, brightness: 0.901)
+            Color.init(hue: 0.0, saturation: 0.0, brightness: 1)
             
             VStack {
                 HStack {

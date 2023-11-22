@@ -75,7 +75,11 @@ struct ExerciseListView: View {
                                 
                                 HStack {
                                     Image(systemName: "gauge.with.needle")
+                                        .foregroundColor(.white)
+                                        .bold()
                                     Text ("3 Mins")
+                                        .foregroundColor(.white)
+                                        .bold()
                                 }
                                 .padding(8)
                                 .background(Color(UIColor(rgb: 0x69BF14))
@@ -116,7 +120,11 @@ struct ExerciseListView: View {
                             
                             HStack {
                                 Image(systemName: "gauge.with.needle")
+                                    .bold()
+                                    .foregroundColor(.white)
                                 Text ("3 Mins")
+                                    .bold()
+                                    .foregroundColor(.white)
                             }
                             .padding(8)
                             .background(Color(UIColor(rgb: 0x69BF14))
@@ -154,11 +162,16 @@ struct ExerciseListView: View {
                             
                             HStack {
                                 Image(systemName: "gauge.with.needle")
+                                    .bold()
+                                    .foregroundColor(.white)
                                 Text ("3 Mins")
+                                    .bold()
+                                    .foregroundColor(.white)
                             }
                             .padding(8)
                             .background(Color(UIColor(rgb: 0x69BF14))
                             .cornerRadius(20))
+                            
                         }
                         .padding(.trailing)
                         .background(Color.white)
