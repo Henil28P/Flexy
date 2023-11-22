@@ -82,7 +82,7 @@ struct ExerciseListView: View {
                                         .bold()
                                 }
                                 .padding(8)
-                                .background(Color(UIColor(rgb: 0x69BF14))
+                                .background(Color(UIColor(.green))
                                 .cornerRadius(20))
                             }
                             .padding(.trailing)
@@ -127,7 +127,7 @@ struct ExerciseListView: View {
                                     .foregroundColor(.white)
                             }
                             .padding(8)
-                            .background(Color(UIColor(rgb: 0x69BF14))
+                            .background(Color(.green)
                             .cornerRadius(20))
                         }
                         .padding(.trailing)
@@ -169,9 +169,9 @@ struct ExerciseListView: View {
                                     .foregroundColor(.white)
                             }
                             .padding(8)
-                            .background(Color(UIColor(rgb: 0x69BF14))
+                            .background(Color(UIColor(.green))
                             .cornerRadius(20))
-                            
+                
                         }
                         .padding(.trailing)
                         .background(Color.white)
