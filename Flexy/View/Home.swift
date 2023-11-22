@@ -15,17 +15,19 @@ struct Home: View {
         NavigationView {
             ZStack {
                 // Color.init(red: 232 / 255, green: 244 / 255, blue: 220 / 255);
-                
+              
                 VStack {
+                   // Spacer()
                     Text("Let's Stretch")
                         .font(.title2)
                     
                     Text("Please click on any specific body parts")
                         .foregroundColor(.black)
                     
-                    Image("HomeScreenMonkey")
+                    Image("HomeMonkeyTransparent")
                         .scaledToFit()
                         .cornerRadius(15)
+                        .frame(maxWidth: .infinity)
                     
                     HStack {
                         NavigationLink(destination: ExerciseListView()) {
@@ -37,7 +39,8 @@ struct Home: View {
                                 .cornerRadius(20)
                         }
                     }
-                    .padding(16) // Adjust the padding value according to your preference
+                    .padding(.horizontal, 16)
+                    .padding(.top, -24)
                 }
                 
               //  ZStack {
@@ -54,7 +57,7 @@ struct Home: View {
                                     .stroke(Color.white, lineWidth: 3)
                             )
                             .opacity(0.9)
-                            .position(x: 160, y: 510)
+                            .position(x: 150, y: 490)
                     
                         Text("Arms")
                             .font(.subheadline)
@@ -68,7 +71,7 @@ struct Home: View {
                                     .stroke(Color.white, lineWidth: 3)
                             )
                             .opacity(0.9)
-                            .position(x: 280, y: 280)
+                            .position(x: 255, y: 335)
                          
                         Text("Abs")
                             .font(.subheadline)
@@ -82,7 +85,7 @@ struct Home: View {
                                     .stroke(Color.white, lineWidth: 3)
                             )
                             .opacity(0.9)
-                            .position(x: 190, y: 420)
+                            .position(x: 180, y: 420)
                             
                             Text("Neck")
                                 .font(.subheadline)
@@ -96,47 +99,7 @@ struct Home: View {
                                         .stroke(Color.white, lineWidth: 3)
                                 )
                                 .opacity(0.9)
-                                .position(x: 130, y: 300)
-                            
-                        
-                          
-//                                Button(action: {
-//                                    // Toggle the state when the button is tapped
-//                                    isBubbleTapped.toggle()
-//                                }) {
-//                                    Text("Legs")
-//                                        .font(.subheadline)
-//                                        .bold()
-//                                        .frame(width: 50, height: 50)
-//                                        .background(isBubbleTapped ? Color.orange : Color.green)
-//                                        .foregroundColor(.white)
-//                                        .clipShape(Circle())
-//                                        .overlay(
-//                                            Circle()
-//                                                .stroke(Color.white, lineWidth: 3)
-//                                        )
-//                                        .opacity(isBubbleTapped ? 1.0 : 0.9)
-//                                        .position(x: 220, y: 550)
-//                                }
-//                            
-//                            
-//                        //}
-//                        
-//                       
-//                            
-//                            Text("Wrist")
-//                                .font(.subheadline)
-//                                .bold()
-//                                .frame(width: 50, height: 50)
-//                                .background(Color.green)
-//                                .foregroundColor(.white)
-//                                .clipShape(Circle())
-//                                .overlay(
-//                                    Circle()
-//                                        .stroke(Color.white, lineWidth: 3)
-//                                )
-//                                .opacity(0.9)
-//                                .position(x: 100, y: 455)
+                                .position(x: 130, y: 280)
                         }
                     
                 }

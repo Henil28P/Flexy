@@ -23,7 +23,7 @@ struct ExerciseListView: View {
     var body: some View {
         ScrollView {
             ZStack {
-                Color.init(hue: 0.248, saturation: 0.150, brightness: 0.901)//.ignoresSafeArea()
+                //Color.init(hue: 0.248, saturation: 0.150, brightness: 0.901)//.ignoresSafeArea()
                 
                 VStack{
                     Spacer()
@@ -44,16 +44,6 @@ struct ExerciseListView: View {
                             Image(systemName: "mic.fill")
                                 .foregroundColor(.gray)
                         }
-                        
-                        //                      HStack(spacing: 0) {
-                        //                          Image(systemName: "magnifyingglass")
-                        //                              .foregroundColor(.gray)
-                        //                          TextField(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=Label@*/"Password"/*@END_MENU_TOKEN@*/, text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("Apple")/*@END_MENU_TOKEN@*/)
-                        //                              .foregroundColor(.gray)
-                        //                          Spacer()
-                        //                          Image(systemName: "mic.fill") .foregroundColor(.gray)
-                        //                      }
-                        
                         .padding(EdgeInsets(top: 7, leading: 8, bottom: 7, trailing: 8))
                         .frame(maxWidth: .infinity)
                         .background(Color(red: 0.46, green: 0.46, blue: 0.50).opacity(0.12))
@@ -61,17 +51,15 @@ struct ExerciseListView: View {
                     }
                     .padding(EdgeInsets(top: 1, leading: 16, bottom: 15, trailing: 16))
                     
-                    // .background()
-                    
                     
                     //first card
                     NavigationLink(destination: Instruction()) {
                         VStack(alignment: .leading, spacing: 0) {
-                            Image("Exercise-thumbnail")
+                            Image("LowLunges")
                             
                             HStack {
                                 VStack (alignment: .leading) {
-                                    Text("Speedy Leg Extension")
+                                    Text("Low Lunges")
                                         .font(.headline)
                                     HStack {
                                         Text("Standing")
@@ -91,7 +79,7 @@ struct ExerciseListView: View {
                                 }
                                 .padding(8)
                                 .background(Color(UIColor(rgb: 0x69BF14))
-                                    .cornerRadius(20))
+                                .cornerRadius(20))
                             }
                             .padding(.trailing)
                             .background(Color.white)
@@ -101,16 +89,17 @@ struct ExerciseListView: View {
                         .padding(.vertical, 1)
                         .padding(.horizontal, 16)
                         .foregroundColor(Color.black)
-                    }//.navigationBarTitle("Stretch Library")
+
+                    }
                     
                     
                     VStack(alignment: .leading, spacing: 0) {
-                        Image("Exercise-thumbnail")
+                        Image("Neck&ShoulderRelease")
                         
                         
                         HStack {
                             VStack (alignment: .leading) {
-                                Text("Squats")
+                                Text("Neck & Shoulder Release")
                                     .font(.headline)
                                 HStack {
                                     Text("Standing")
@@ -131,7 +120,7 @@ struct ExerciseListView: View {
                             }
                             .padding(8)
                             .background(Color(UIColor(rgb: 0x69BF14))
-                                .cornerRadius(20))
+                            .cornerRadius(20))
                         }
                         .padding(.trailing)
                         .background(Color.white)
@@ -140,16 +129,15 @@ struct ExerciseListView: View {
                     .cornerRadius(8)
                     .padding(.vertical, 1)
                     .padding(.horizontal, 16)
-                    
-                    
+
                     
                     VStack(alignment: .leading, spacing: 0) {
-                        Image("Exercise-thumbnail")
+                        Image("BackBend")
                         
                         
                         HStack {
                             VStack (alignment: .leading) {
-                                Text("Speedy Leg Extension")
+                                Text("Back Bend")
                                     .font(.headline)
                                 HStack {
                                     Text("Standing")
@@ -170,7 +158,7 @@ struct ExerciseListView: View {
                             }
                             .padding(8)
                             .background(Color(UIColor(rgb: 0x69BF14))
-                                .cornerRadius(20))
+                            .cornerRadius(20))
                         }
                         .padding(.trailing)
                         .background(Color.white)
