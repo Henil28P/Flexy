@@ -36,11 +36,7 @@ struct Feedback: View {
 //            VideoPlayer(player: AVPlayer(url: url!))
 //        }
         
-        
-        
-        
         ZStack {
-            
             // VideoPlayer(player: AVPlayer(url: url!))
             
             Color.init(hue: 0.0, saturation: 0.0, brightness: 1)
@@ -86,8 +82,8 @@ struct Feedback: View {
                 
                 Text("")
                 
-                Button("Stop Exercise") {
-                    // Image(systemName: "voiceover")
+                NavigationLink(destination: Summary()) {
+                    Text("Stop Exercise")
                 }
                 .foregroundColor(Color.white)
                 .frame(width: 300, height: 23)

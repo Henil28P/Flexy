@@ -9,23 +9,35 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        
         TabView {
-            Home()
+            NavigationView {
+               
+                Loading()
+            }
                 .tabItem() {
                     Image(systemName: "figure.strengthtraining.functional")
                     Text("Stretch")
                 }
-            SavedStretches()
+            
+            NavigationView {
+                SavedStretches()
+            }
                 .tabItem() {
                     Image(systemName: "star.fill")
                     Text("Saved Stretches")
                 }
-            Feedback()
+            
+            NavigationView{
+                Summary()
+            }
                 .tabItem() {
                     Image(systemName: "gearshape")
                     Text("Summary")
                 }
         }
+    }
+}
 //        VStack {
 //            Image(systemName: "house")
 //                .imageScale(.large)
@@ -38,8 +50,8 @@ struct ContentView: View {
 //            
 //        }
 //        .padding()
-    }
-}
+    
+
 
 #Preview {
     ContentView()

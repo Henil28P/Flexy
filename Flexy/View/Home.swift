@@ -9,11 +9,16 @@
 import SwiftUI
 
 struct Home: View {
-    @State private var isBubbleTapped = false
+    //@State private var isBubbleTapped = false
+    
+    let colors: [Color] = [.orange]
+        @State private var fgColor: Color = .gray
     
     var body: some View {
-        NavigationView {
+        
+//        NavigationView {
             ZStack {
+                
                 // Color.init(red: 232 / 255, green: 244 / 255, blue: 220 / 255);
               
                 VStack {
@@ -44,7 +49,7 @@ struct Home: View {
                 }
                 
               //  ZStack {
-                    
+//                NavigationLink(destination: ExerciseListView())
                         Text("Groin")
                             .font(.subheadline)
                             .bold()
@@ -55,6 +60,9 @@ struct Home: View {
                             .overlay(
                                 Circle()
                                     .stroke(Color.white, lineWidth: 3)
+                                    .onTapGesture {
+                                        fgColor = colors.randomElement()!
+                                    }
                             )
                             .opacity(0.9)
                             .position(x: 150, y: 490)
@@ -72,6 +80,20 @@ struct Home: View {
                             )
                             .opacity(0.9)
                             .position(x: 255, y: 335)
+                
+                        Text("Legs")
+                            .font(.subheadline)
+                            .bold()
+                            .frame(width: 50, height: 50)
+                            .background(Color.orange)
+                            .foregroundColor(.white)
+                            .clipShape(Circle())
+                            .overlay(
+                                Circle()
+                                    .stroke(Color.white, lineWidth: 3)
+                            )
+                            .opacity(0.9)
+                            .position(x: 200, y: 555)
                          
                         Text("Abs")
                             .font(.subheadline)
@@ -87,22 +109,22 @@ struct Home: View {
                             .opacity(0.9)
                             .position(x: 180, y: 420)
                             
-                            Text("Neck")
-                                .font(.subheadline)
-                                .bold()
-                                .frame(width: 50, height: 50)
-                                .background(Color.green)
-                                .foregroundColor(.white)
-                                .clipShape(Circle())
-                                .overlay(
-                                    Circle()
-                                        .stroke(Color.white, lineWidth: 3)
-                                )
-                                .opacity(0.9)
-                                .position(x: 130, y: 280)
+                        Text("Neck")
+                            .font(.subheadline)
+                            .bold()
+                            .frame(width: 50, height: 50)
+                            .background(Color.green)
+                            .foregroundColor(.white)
+                            .clipShape(Circle())
+                            .overlay(
+                                Circle()
+                                    .stroke(Color.white, lineWidth: 3)
+                            )
+                            .opacity(0.9)
+                            .position(x: 130, y: 280)
                         }
                     
-                }
+                //}
             }
         }
 

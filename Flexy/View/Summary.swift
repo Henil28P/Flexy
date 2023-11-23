@@ -11,7 +11,6 @@ import SwiftUI
 struct Summary: View {
     var body: some View {
         
-        
         VStack {
             Text("You did it, Ellie! ")
             
@@ -35,7 +34,7 @@ struct Summary: View {
                 NavigationLink(destination: Home()) {
                     ZStack {
                         Circle()
-                            .inset(by: 29)
+                            .inset(by: 18)
                             .foregroundColor(.init(hue: 0.248, saturation: 0.150, brightness: 0.901))
                         Image(systemName: "square.and.arrow.up")
                             .font(.title2)
@@ -48,7 +47,7 @@ struct Summary: View {
                         ZStack {
                             
                             Circle()
-                                .inset(by: 29)
+                                .inset(by: 18)
                                 .foregroundColor(.init(hue: 0.248, saturation: 0.150, brightness: 0.901))
                             
                             Image(systemName: "star")
@@ -67,13 +66,24 @@ struct Summary: View {
                             .cornerRadius(20)
                         Text("Completed")
                     }
+                    .overlay(
+                        Text("95%")
+                            .font(.custom("Helvetica", size: 20))
+                            .foregroundColor(Color.red)
+                            .offset(x: 0, y: 30)
+                    )
                     ZStack {
                         Rectangle()
                         
                             .foregroundColor(Color.init(hue: 0.248, saturation: 0.150, brightness: 0.901))                        .cornerRadius(20)
                         Text("Duration")
-                        
                     }
+                    .overlay(
+                    Text("3 min")
+                        .font(.custom("Helvetica", size: 20))
+                        .foregroundColor(Color.orange)
+                        .offset(x: 0, y: 30)
+                    )
                 }
             }
             ZStack {
@@ -103,9 +113,13 @@ struct Summary: View {
             }
                 
                 ZStack {
-                    Button("Back to Home") {
-                        // Image(systemName: "voiceover")
+                    NavigationLink(destination: Home()) {
+                        Text("Stop Exercise")
                     }
+                    
+//                    Button("Back to Home") {
+//                        // Image(systemName: "voiceover")
+//                    }
                     .foregroundColor(Color.white)
                     .frame(width: 300, height: 23)
                     .padding(18)
@@ -146,6 +160,4 @@ struct Summary: View {
         static var palatino = "Palatino"
         static var zapfino = "Zapfino"
     }
-
-
 
