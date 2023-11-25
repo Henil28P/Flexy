@@ -28,7 +28,6 @@ struct ExerciseListView: View {
                 VStack{
                     Spacer()
                     Spacer()
-                    Spacer()
                     Text("Stretch Library")
                         .font(.title3)
                     VStack(alignment: .leading) {
@@ -96,90 +95,96 @@ struct ExerciseListView: View {
 
                     }
                     
-                    
-                    VStack(alignment: .leading, spacing: 0) {
-                        Image("Neck&ShoulderRelease")
-                        
-                        
-                        HStack {
-                            VStack (alignment: .leading) {
-                                Text("Neck & Shoulder Release")
-                                    .font(.headline)
-                                HStack {
-                                    Text("Standing")
-                                    Text("|")
-                                    Text("Low Impact")
-                                }
-                                .foregroundColor(.gray)
-                            }
-                            .padding(10.0)
-                            .cornerRadius(8)
+                    // second card
+                    NavigationLink(destination: Instruction()) {
+                        VStack(alignment: .leading, spacing: 0) {
+                            Image("Neck&ShoulderRelease")
                             
-                            
-                            Spacer()
                             
                             HStack {
-                                Image(systemName: "gauge.with.needle")
-                                    .bold()
-                                    .foregroundColor(.white)
-                                Text ("3 Mins")
-                                    .bold()
-                                    .foregroundColor(.white)
+                                VStack (alignment: .leading) {
+                                    Text("Neck & Shoulder Release")
+                                        .font(.headline)
+                                    HStack {
+                                        Text("Standing")
+                                        Text("|")
+                                        Text("Low Impact")
+                                    }
+                                    .foregroundColor(.gray)
+                                }
+                                .padding(10.0)
+                                .cornerRadius(8)
+                                
+                                
+                                Spacer()
+                                
+                                HStack {
+                                    Image(systemName: "gauge.with.needle")
+                                        .bold()
+                                        .foregroundColor(.white)
+                                    Text ("3 Mins")
+                                        .bold()
+                                        .foregroundColor(.white)
+                                }
+                                .padding(8)
+                                .background(Color(.green)
+                                    .cornerRadius(20))
                             }
-                            .padding(8)
-                            .background(Color(.green)
-                            .cornerRadius(20))
+                            .padding(.trailing)
+                            .background(Color.white)
                         }
-                        .padding(.trailing)
                         .background(Color.white)
+                        .cornerRadius(8)
+                        .padding(.vertical, 1)
+                        .padding(.horizontal, 16)
+                        .foregroundColor(Color.black)
                     }
-                    .background(Color.white)
-                    .cornerRadius(8)
-                    .padding(.vertical, 1)
-                    .padding(.horizontal, 16)
 
-                    
-                    VStack(alignment: .leading, spacing: 0) {
-                        Image("BackBend")
-                        
-                        
-                        HStack {
-                            VStack (alignment: .leading) {
-                                Text("Back Bend")
-                                    .font(.headline)
-                                HStack {
-                                    Text("Standing")
-                                    Text("|")
-                                    Text("Low Impact")
-                                }
-                                .foregroundColor(.gray)
-                            }
-                            .padding(10.0)
-                            .cornerRadius(8)
+                    // third card
+                    NavigationLink(destination: Instruction()) {
+                        VStack(alignment: .leading, spacing: 0) {
+                            Image("BackBend")
                             
-                            
-                            Spacer()
                             
                             HStack {
-                                Image(systemName: "gauge.with.needle")
-                                    .bold()
-                                    .foregroundColor(.white)
-                                Text ("3 Mins")
-                                    .bold()
-                                    .foregroundColor(.white)
+                                VStack (alignment: .leading) {
+                                    Text("Back Bend")
+                                        .font(.headline)
+                                    HStack {
+                                        Text("Standing")
+                                        Text("|")
+                                        Text("Low Impact")
+                                    }
+                                    .foregroundColor(.gray)
+                                }
+                                .padding(10.0)
+                                .cornerRadius(8)
+                                
+                                
+                                Spacer()
+                                
+                                HStack {
+                                    Image(systemName: "gauge.with.needle")
+                                        .bold()
+                                        .foregroundColor(.white)
+                                    Text ("3 Mins")
+                                        .bold()
+                                        .foregroundColor(.white)
+                                }
+                                .padding(8)
+                                .background(Color(UIColor(.green))
+                                    .cornerRadius(20))
+                                
                             }
-                            .padding(8)
-                            .background(Color(UIColor(.green))
-                            .cornerRadius(20))
-                
+                            .padding(.trailing)
+                            .background(Color.white)
                         }
-                        .padding(.trailing)
                         .background(Color.white)
+                        .cornerRadius(8)
+                        .padding(.vertical, 1)
+                        .padding(.horizontal, 16)
+                        .foregroundColor(Color.black)
                     }
-                    .background(Color.white)
-                    .cornerRadius(8)
-                    .padding(.vertical, 1)
-                    .padding(.horizontal, 16)
                 }
                 .frame(maxWidth: .infinity, alignment: .top)
             }

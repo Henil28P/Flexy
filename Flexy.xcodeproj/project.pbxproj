@@ -17,7 +17,6 @@
 		E435FAF42B09C0E9009D3E7A /* ModelA.swift in Sources */ = {isa = PBXBuildFile; fileRef = E435FAF32B09C0E9009D3E7A /* ModelA.swift */; };
 		E435FAF62B09C360009D3E7A /* ModelB.swift in Sources */ = {isa = PBXBuildFile; fileRef = E435FAF52B09C360009D3E7A /* ModelB.swift */; };
 		E435FAFB2B0D5BD5009D3E7A /* SavedStretches.swift in Sources */ = {isa = PBXBuildFile; fileRef = E435FAFA2B0D5BD5009D3E7A /* SavedStretches.swift */; };
-		E4A263122B0ECC7900A06E12 /* Videotest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A263112B0ECC7900A06E12 /* Videotest.swift */; };
 		E4A263142B0ECE4700A06E12 /* Final1.mov in Resources */ = {isa = PBXBuildFile; fileRef = E4A263132B0ECE4700A06E12 /* Final1.mov */; };
 		E4D09B172B04714A00A5F4EA /* FlexyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D09B162B04714A00A5F4EA /* FlexyApp.swift */; };
 		E4D09B192B04714A00A5F4EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D09B182B04714A00A5F4EA /* ContentView.swift */; };
@@ -58,7 +57,6 @@
 		E435FAF32B09C0E9009D3E7A /* ModelA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelA.swift; sourceTree = "<group>"; };
 		E435FAF52B09C360009D3E7A /* ModelB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelB.swift; sourceTree = "<group>"; };
 		E435FAFA2B0D5BD5009D3E7A /* SavedStretches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedStretches.swift; sourceTree = "<group>"; };
-		E4A263112B0ECC7900A06E12 /* Videotest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Videotest.swift; sourceTree = "<group>"; };
 		E4A263132B0ECE4700A06E12 /* Final1.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Final1.mov; sourceTree = "<group>"; };
 		E4D09B132B04714A00A5F4EA /* Flexy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flexy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4D09B162B04714A00A5F4EA /* FlexyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexyApp.swift; sourceTree = "<group>"; };
@@ -108,7 +106,6 @@
 				E435FAEB2B07515B009D3E7A /* Feedback.swift */,
 				E435FAFA2B0D5BD5009D3E7A /* SavedStretches.swift */,
 				568707752B0DB6870065132D /* Summary.swift */,
-				E4A263112B0ECC7900A06E12 /* Videotest.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -316,7 +313,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DDAF6ED2B0B99E100DE7AD1 /* ExerciseListView.swift in Sources */,
-				E4A263122B0ECC7900A06E12 /* Videotest.swift in Sources */,
 				E4D09B192B04714A00A5F4EA /* ContentView.swift in Sources */,
 				52AB52C72B0D9B4B00F11FA1 /* Loading.swift in Sources */,
 				568707762B0DB6870065132D /* Summary.swift in Sources */,

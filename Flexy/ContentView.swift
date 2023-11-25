@@ -12,7 +12,6 @@ struct ContentView: View {
         
         TabView {
             NavigationView {
-               
                 Loading()
             }
                 .tabItem() {
