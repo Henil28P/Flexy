@@ -20,6 +20,9 @@ extension UIColor {
 // hello //
 
 struct ExerciseListView: View {
+    @State private var isStarred = false
+    @State private var savedContent: String?
+    
     var body: some View {
         ScrollView {
             ZStack {
@@ -69,6 +72,29 @@ struct ExerciseListView: View {
                                 }
                                 .padding(10.0)
                                 .cornerRadius(8)
+                                
+                                Spacer()
+                                
+                                HStack {
+                                                Button(action: {
+                                                    isStarred.toggle()
+
+                                                    if isStarred {
+                                                        // Save your content when the star is pressed
+                                                        savedContent = "Your saved content"
+                                                    } else {
+                                                        // Optionally, you can perform an action when unstarred
+                                                        savedContent = nil
+                                                    }
+                                                }) {
+                                                    Image(systemName: isStarred ? "star.fill" : "star")
+                                                        .foregroundColor(isStarred ? .yellow : .gray)
+                                                }
+
+                                                if let savedContent = savedContent {
+                                                    Text("Saved Content: \(savedContent)")
+                                                }
+                                }
                                 
                                 Spacer()
                                 

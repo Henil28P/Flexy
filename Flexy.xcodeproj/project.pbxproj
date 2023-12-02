@@ -25,6 +25,7 @@
 		E4D09B282B04714C00A5F4EA /* FlexyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D09B272B04714C00A5F4EA /* FlexyTests.swift */; };
 		E4D09B322B04714C00A5F4EA /* FlexyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D09B312B04714C00A5F4EA /* FlexyUITests.swift */; };
 		E4D09B342B04714C00A5F4EA /* FlexyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D09B332B04714C00A5F4EA /* FlexyUITestsLaunchTests.swift */; };
+		E4D548142B1AFDAC00E53A89 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D548132B1AFDAC00E53A89 /* Login.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		E4D09B2D2B04714C00A5F4EA /* FlexyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlexyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4D09B312B04714C00A5F4EA /* FlexyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexyUITests.swift; sourceTree = "<group>"; };
 		E4D09B332B04714C00A5F4EA /* FlexyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E4D548132B1AFDAC00E53A89 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				E435FAEB2B07515B009D3E7A /* Feedback.swift */,
 				E435FAFA2B0D5BD5009D3E7A /* SavedStretches.swift */,
 				568707752B0DB6870065132D /* Summary.swift */,
+				E4D548132B1AFDAC00E53A89 /* Login.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				9DDAF6ED2B0B99E100DE7AD1 /* ExerciseListView.swift in Sources */,
 				E4D09B192B04714A00A5F4EA /* ContentView.swift in Sources */,
 				52AB52C72B0D9B4B00F11FA1 /* Loading.swift in Sources */,
+				E4D548142B1AFDAC00E53A89 /* Login.swift in Sources */,
 				568707762B0DB6870065132D /* Summary.swift in Sources */,
 				E435FAE92B07513F009D3E7A /* Instruction.swift in Sources */,
 				E435FAEE2B075163009D3E7A /* Home.swift in Sources */,
