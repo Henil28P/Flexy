@@ -10,9 +10,9 @@ import SwiftUI
 struct Login: View {
     @State private var username = ""
     @State private var password = ""
-    @State private var wrongUsername = ""
-    @State private var wrongPassword = ""
-    @State private var showingLoginScreen = ""
+    @State private var wrongUsername = 0
+    @State private var wrongPassword = 0
+    @State private var showingLoginScreen = false
     
     var body: some View {
         NavigationView {
@@ -52,6 +52,10 @@ struct Login: View {
                     .frame(width: 300, height: 50)
                     .background(Color.green)
                     .cornerRadius(10)
+                    
+                    NavigationLink(destination: Text("You are logged in @\(username)"), isActive: $showingLoginScreen) {
+                        EmptyView()
+                    }
                 }
             }
         } .navigationBarHidden(true)
