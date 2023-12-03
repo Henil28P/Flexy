@@ -36,14 +36,14 @@ struct Login: View {
                         .frame(width: 300, height: 50)
                         .background(Color.black.opacity(0.05))
                         .cornerRadius(10)
-                        // .border(.red, width: CGFloat(wrongUsername))
+                        .border(.red, width: CGFloat(wrongUsername))
                     
                     SecureField("Password", text: $password)
                         .padding()
                         .frame(width: 300, height: 50)
                         .background(Color.black.opacity(0.05))
                         .cornerRadius(10)
-                        // .border(.red, width: CGFloat(wrongPassword))
+                        .border(.red, width: CGFloat(wrongPassword))
                     
                     Button("Login") {
                         // Authenticate user
@@ -59,6 +59,15 @@ struct Login: View {
                 }
             }
         } .navigationBarHidden(true)
+    }
+    
+    func authenticateUser(username: String, password: String) {
+        
+        if username.lowercased() == "user2" {
+            wrongUsername = 0
+        } else {
+            wrongUsername = 2
+        }
     }
 }
 
