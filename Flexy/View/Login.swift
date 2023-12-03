@@ -46,7 +46,7 @@ struct Login: View {
                         .border(.red, width: CGFloat(wrongPassword))
                     
                     Button("Login") {
-                        // Authenticate user
+                        authenticateUser(username: username, password: password)
                     }
                     .foregroundColor(.white)
                     .frame(width: 300, height: 50)
