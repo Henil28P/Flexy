@@ -65,6 +65,14 @@ struct Login: View {
         
         if username.lowercased() == "user2" {
             wrongUsername = 0
+            
+            if password.lowercased() == "zyx987" {
+                wrongPassword = 0
+                showingLoginScreen = true
+            }
+            else {
+                wrongPassword = 2
+            }
         } else {
             wrongUsername = 2
         }
