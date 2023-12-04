@@ -15,7 +15,7 @@ struct Login: View {
     @State private var showingLoginScreen = false
     
     var body: some View {
-        NavigationView {
+        // NavigationView {
             ZStack {
                 Color.green
                     .ignoresSafeArea()
@@ -47,18 +47,23 @@ struct Login: View {
                     
                     Button("Login") {
                         authenticateUser(username: username, password: password)
+//                        NavigationLink(destination: Home())
                     }
+//                    NavigationLink(destination: Home()) {
+//                        Text("Login")
+//                        authenticateUser(username: username, password: password)
+//                    }
                     .foregroundColor(.white)
                     .frame(width: 300, height: 50)
                     .background(Color.green)
                     .cornerRadius(10)
                     
-                    NavigationLink(destination: Text("You are logged in @\(username)"), isActive: $showingLoginScreen) {
-                        EmptyView()
+                    NavigationLink(destination: Home(), isActive: $showingLoginScreen) {
+                        // Home()
                     }
                 }
             }
-        } .navigationBarHidden(true)
+        // } .navigationBarHidden(true)
     }
     
     func authenticateUser(username: String, password: String) {
@@ -73,7 +78,8 @@ struct Login: View {
             else {
                 wrongPassword = 2
             }
-        } else {
+        }
+        else {
             wrongUsername = 2
         }
     }

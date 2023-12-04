@@ -14,7 +14,7 @@ struct Loading: View {
     
     var body: some View {
         if isActive {
-            Home()
+            Login()
         } else {
             ZStack {
                 ZStack {

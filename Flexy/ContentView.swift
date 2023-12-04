@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        TabView {
+        // TabView {
             NavigationView {
                 Loading()
             }
@@ -19,22 +19,22 @@ struct ContentView: View {
                     Text("Stretch")
                 }
             
-            NavigationView {
-                SavedStretches()
-            }
-                .tabItem() {
-                    Image(systemName: "star.fill")
-                    Text("Saved Stretches")
-                }
-            
-            NavigationView{
-                Summary()
-            }
-                .tabItem() {
-                    Image(systemName: "gearshape")
-                    Text("Summary")
-                }
-        }
+//            NavigationView {
+//                SavedStretches()
+//            }
+//                .tabItem() {
+//                    Image(systemName: "star.fill")
+//                    Text("Saved Stretches")
+//                }
+//            
+//            NavigationView{
+//                Summary()
+//            }
+//                .tabItem() {
+//                    Image(systemName: "gearshape")
+//                    Text("Summary")
+//                }
+        // }
     }
 }
 //        VStack {

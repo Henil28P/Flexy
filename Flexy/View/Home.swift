@@ -12,17 +12,18 @@ struct Home: View {
     //@State private var isBubbleTapped = false
     
     let colors: [Color] = [.orange]
-        @State private var fgColor: Color = .gray
+    @State private var fgColor: Color = .gray
     
     var body: some View {
         
-//        NavigationView {
+        //        NavigationView
+            
             ZStack {
                 
                 // Color.init(red: 232 / 255, green: 244 / 255, blue: 220 / 255);
-              
+                
                 VStack {
-                   // Spacer()
+                    // Spacer()
                     Text("Let's Stretch")
                         .font(.title2)
                     
@@ -48,85 +49,109 @@ struct Home: View {
                     .padding(.top, -24)
                 }
                 
-              //  ZStack {
-//                NavigationLink(destination: ExerciseListView())
-                        Text("Groin")
-                            .font(.subheadline)
-                            .bold()
-                            .frame(width: 50, height: 50)
-                            .background(Color.green)
-                            .foregroundColor(.white)
-                            .clipShape(Circle())
-                            .overlay(
-                                Circle()
-                                    .stroke(Color.white, lineWidth: 3)
-                                    .onTapGesture {
-                                        fgColor = colors.randomElement()!
-                                    }
-                            )
-                            .opacity(0.9)
-                            .position(x: 150, y: 490)
-                    
-                        Text("Arms")
-                            .font(.subheadline)
-                            .bold()
-                            .frame(width: 50, height: 50)
-                            .background(Color.green)
-                            .foregroundColor(.white)
-                            .clipShape(Circle())
-                            .overlay(
-                                Circle()
-                                    .stroke(Color.white, lineWidth: 3)
-                            )
-                            .opacity(0.9)
-                            .position(x: 255, y: 335)
+                //  ZStack {
+                //                NavigationLink(destination: ExerciseListView())
+                Text("Groin")
+                    .font(.subheadline)
+                    .bold()
+                    .frame(width: 50, height: 50)
+                    .background(Color.green)
+                    .foregroundColor(.white)
+                    .clipShape(Circle())
+                    .overlay(
+                        Circle()
+                            .stroke(Color.white, lineWidth: 3)
+                            .onTapGesture {
+                                fgColor = colors.randomElement()!
+                            }
+                    )
+                    .opacity(0.9)
+                    .position(x: 150, y: 490)
                 
-                        Text("Legs")
-                            .font(.subheadline)
-                            .bold()
-                            .frame(width: 50, height: 50)
-                            .background(Color.orange)
-                            .foregroundColor(.white)
-                            .clipShape(Circle())
-                            .overlay(
-                                Circle()
-                                    .stroke(Color.white, lineWidth: 3)
-                            )
-                            .opacity(0.9)
-                            .position(x: 200, y: 555)
-                         
-                        Text("Abs")
-                            .font(.subheadline)
-                            .bold()
-                            .frame(width: 50, height: 50)
-                            .background(Color.green)
-                            .foregroundColor(.white)
-                            .clipShape(Circle())
-                            .overlay(
-                                Circle()
-                                    .stroke(Color.white, lineWidth: 3)
-                            )
-                            .opacity(0.9)
-                            .position(x: 180, y: 420)
-                            
-                        Text("Neck")
-                            .font(.subheadline)
-                            .bold()
-                            .frame(width: 50, height: 50)
-                            .background(Color.green)
-                            .foregroundColor(.white)
-                            .clipShape(Circle())
-                            .overlay(
-                                Circle()
-                                    .stroke(Color.white, lineWidth: 3)
-                            )
-                            .opacity(0.9)
-                            .position(x: 130, y: 280)
-                        }
-                    
-                //}
+                Text("Arms")
+                    .font(.subheadline)
+                    .bold()
+                    .frame(width: 50, height: 50)
+                    .background(Color.green)
+                    .foregroundColor(.white)
+                    .clipShape(Circle())
+                    .overlay(
+                        Circle()
+                            .stroke(Color.white, lineWidth: 3)
+                    )
+                    .opacity(0.9)
+                    .position(x: 255, y: 335)
+                
+                Text("Legs")
+                    .font(.subheadline)
+                    .bold()
+                    .frame(width: 50, height: 50)
+                    .background(Color.orange)
+                    .foregroundColor(.white)
+                    .clipShape(Circle())
+                    .overlay(
+                        Circle()
+                            .stroke(Color.white, lineWidth: 3)
+                    )
+                    .opacity(0.9)
+                    .position(x: 200, y: 555)
+                
+                Text("Abs")
+                    .font(.subheadline)
+                    .bold()
+                    .frame(width: 50, height: 50)
+                    .background(Color.green)
+                    .foregroundColor(.white)
+                    .clipShape(Circle())
+                    .overlay(
+                        Circle()
+                            .stroke(Color.white, lineWidth: 3)
+                    )
+                    .opacity(0.9)
+                    .position(x: 180, y: 420)
+                
+                Text("Neck")
+                    .font(.subheadline)
+                    .bold()
+                    .frame(width: 50, height: 50)
+                    .background(Color.green)
+                    .foregroundColor(.white)
+                    .clipShape(Circle())
+                    .overlay(
+                        Circle()
+                            .stroke(Color.white, lineWidth: 3)
+                    )
+                    .opacity(0.9)
+                    .position(x: 130, y: 280)
+            }
+        
+        TabView {
+            NavigationView {
+                Home()
+            }
+            .tabItem() {
+                Image(systemName: "figure.strengthtraining.functional")
+                Text("Stretch")
+            }
+            NavigationView {
+                SavedStretches()
+            }
+            .tabItem() {
+                Image(systemName: "star.fill")
+                Text("Saved Stretches")
+            }
+            NavigationView {
+                Summary()
+            }
+            .tabItem() {
+                Image(systemName: "gearshape")
+                Text("Summary")
             }
         }
+            
+            //}
+        }
+    }
 
 
 #Preview {
